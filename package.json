@@ -4,6 +4,8 @@
   "description": "Backend for the veverka project",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
     "test": "npm run test"
   },
   "repository": {
