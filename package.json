@@ -1,0 +1,19 @@
+{
+  "name": "veverka-backend",
+  "version": "0.0.1",
+  "description": "Backend for the veverka project",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MicrosoftSTC/veverka-backend.git"
+  },
+  "author": "Microsoft STC",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MicrosoftSTC/veverka-backend/issues"
+  },
+  "homepage": "https://github.com/MicrosoftSTC/veverka-backend#readme"
+}
