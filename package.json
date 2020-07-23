@@ -1,0 +1,28 @@
+{
+  "name": "veverka-backend",
+  "version": "0.0.1",
+  "description": "Backend for the veverka project",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MicrosoftSTC/veverka-backend.git"
+  },
+  "author": "Microsoft STC",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MicrosoftSTC/veverka-backend/issues"
+  },
+  "homepage": "https://github.com/MicrosoftSTC/veverka-backend#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.5.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "nodemon": "^2.0.4"
+  }
+}
