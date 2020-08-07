@@ -1,16 +1,4 @@
-var firebaseConfig = {
-  apikey : process.env.API_KEY,
-  authDomain: "veverka-back.firebaseapp.com",
-  databaseURL: "https://veverka-back.firebaseio.com",
-  projectId: "veverka-back",
-  storageBucket: "veverka-back.appspot.com",
-  messagingSenderId: process.env.MESSAGINGSENDERID,
-  appId: process.env.APPID,
-  measurementId: process.env.MEASUREMENTID
-};
-
-firebase.initializeApp(firebaseConfig);
-firebase.analytics();
+import * as admin from 'firebase-admin';
 
 const express = require('express');
 
