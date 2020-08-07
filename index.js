@@ -9,6 +9,7 @@ const port = process.env.PORT || 5000;
 var admin = require("firebase-admin");
 
 // Fetch the service account key JSON file contents
+var serviceAccount = require("service-api-key.json");
 
 // Initialize the app with a service account, granting admin privileges
 admin.initializeApp({
