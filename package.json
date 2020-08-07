@@ -19,7 +19,8 @@
     "homepage": "https://github.com/MicrosoftSTC/veverka-backend#readme",
     "dependencies": {
         "express": "^4.17.1",
-        "express-session": "^1.17.1"
+        "express-session": "^1.17.1",
+        "firebase-admin": "^9.0.0"
     },
     "devDependencies": {
         "eslint": "^7.6.0",
