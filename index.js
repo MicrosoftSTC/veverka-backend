@@ -12,7 +12,7 @@ const serviceAccount = require("service-api-key.json");
 // Initialize the app with a service account, granting admin privileges
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  databaseURL: 'https://veverka-back.firebaseio.com'
+  databaseURL: 'https://veverka-back.firebaseio.com',
 });
 
 // As an admin, the app has access to read and write all data, regardless of Security Rules
