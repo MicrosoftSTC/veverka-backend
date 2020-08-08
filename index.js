@@ -7,7 +7,7 @@ const app = express(); // express init
 const port = process.env.PORT || 5000;
 
 // Fetch the service account key JSON file contents
-const serviceAccount = require("service-api-key.json");
+const serviceAccount = require('./service-api-key.json');
 
 // Initialize the app with a service account, granting admin privileges
 admin.initializeApp({
