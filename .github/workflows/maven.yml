@@ -27,4 +27,4 @@ jobs:
       run: mvn -B package --file pom.xml
       
     - name: Test 
-      run: mnv test
+      run: mvn surefire:test -f pom.xml
