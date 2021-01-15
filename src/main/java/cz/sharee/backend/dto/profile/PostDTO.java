@@ -5,6 +5,7 @@ import cz.sharee.backend.domain.flow.PostDuplication;
 import cz.sharee.backend.dto.flow.ChannelDTO;
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.lang.Nullable;
 
 import java.time.LocalDate;
 import java.util.Set;
@@ -13,6 +14,7 @@ import java.util.Set;
 @Setter
 public class PostDTO {
     private Long id;
+    @Nullable
     private String header;
     private String content;
     private PostType postType;

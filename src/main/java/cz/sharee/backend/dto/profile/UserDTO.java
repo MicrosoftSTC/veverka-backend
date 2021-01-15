@@ -54,6 +54,10 @@ public class UserDTO {
     @NotNull(message = "city must not be null", groups = {UserRegistrationInfo.class})
     private String city;
     @Nullable
+    private Boolean needsReview;
+    @Nullable
+    private Boolean banned;
+    @Nullable
     private Set<CommunityDTO> foundedCommunities;
     @Nullable
     private Set<CommunityMembershipDTO> activeCommunityMemberships;

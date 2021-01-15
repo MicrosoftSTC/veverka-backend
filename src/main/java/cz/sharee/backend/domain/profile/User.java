@@ -191,7 +191,7 @@ public class User implements UserDetails, DeleteAble {
         this.activeCommunityMemberships = new HashSet<>(allCommunityMemberships);
         this.activeCommunityMemberships = this.activeCommunityMemberships.stream().filter(communityMembership -> communityMembership.getStatus() != CommunityMembershipStatus.BANNED).collect(Collectors.toSet());
 
-        // activeCharRooms loader
+        // activeChatRooms loader
         this.activeChatRooms = new HashSet<>(acceptedChatRooms);
         activeChatRooms.addAll(requestedChatRooms);
         this.activeChatRooms = this.acceptedChatRooms.stream().filter(chatRoom -> chatRoom.getChatRoomStatus() == ChatRoomStatus.ACCEPTED).collect(Collectors.toSet());
