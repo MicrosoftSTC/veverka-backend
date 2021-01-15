@@ -5,6 +5,7 @@ import cz.sharee.backend.domain.enumeration.Subjects;
 import cz.sharee.backend.domain.profile.User;
 import lombok.Data;
 import org.hibernate.annotations.CreationTimestamp;
+import org.springframework.lang.Nullable;
 
 import javax.persistence.*;
 import java.time.LocalDate;
@@ -29,6 +30,8 @@ public class Community {
     @Column(nullable = false)
     private CommunityTypes communityType;
 
+    @Enumerated(EnumType.STRING)
+    @Nullable
     private Subjects subject;
 
     @CreationTimestamp
