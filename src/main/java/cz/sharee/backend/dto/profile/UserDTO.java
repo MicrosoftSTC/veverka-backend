@@ -60,11 +60,15 @@ public class UserDTO {
     @Nullable
     private Set<CommunityDTO> foundedCommunities;
     @Nullable
+    private Set<CommunityMembershipDTO> communityMemberships;
+    @Nullable
     private Set<CommunityMembershipDTO> activeCommunityMemberships;
     @Nullable
     private Set<ChannelDTO> foundedChannels;
     @Nullable
     private Set<ChannelMembershipDTO> channelMemberships;
+    @Nullable
+    private Set<ChannelMembershipDTO> activeChannelMemberships;
     @Nullable
     private Set<PostDTO> posts;
     @Nullable
