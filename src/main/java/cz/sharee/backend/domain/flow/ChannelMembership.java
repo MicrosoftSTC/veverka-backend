@@ -1,5 +1,6 @@
 package cz.sharee.backend.domain.flow;
 
+import cz.sharee.backend.domain.enumeration.ChannelMembershipStatus;
 import cz.sharee.backend.domain.enumeration.Roles;
 import cz.sharee.backend.domain.profile.User;
 import lombok.Data;
@@ -21,6 +22,9 @@ public class ChannelMembership {
 
     @Enumerated(EnumType.STRING)
     private Roles role;
+
+    @Enumerated(EnumType.STRING)
+    private ChannelMembershipStatus status;
 
     @ManyToOne
     private User member;

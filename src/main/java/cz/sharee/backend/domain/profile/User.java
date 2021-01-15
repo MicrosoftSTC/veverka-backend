@@ -124,6 +124,9 @@ public class User implements UserDetails, DeleteAble {
     @Singular
     private Set<ChannelMembership> channelMemberships;
 
+    @Transient
+    private Set<ChannelMembership> activeChannelMemberships;
+
     @OneToMany(mappedBy = "user")
     @Singular
     private Set<Post> posts;
@@ -190,6 +193,9 @@ public class User implements UserDetails, DeleteAble {
         // activeCommunityMemberships loader
         this.activeCommunityMemberships = new HashSet<>(allCommunityMemberships);
         this.activeCommunityMemberships = this.activeCommunityMemberships.stream().filter(communityMembership -> communityMembership.getStatus() != CommunityMembershipStatus.BANNED).collect(Collectors.toSet());
+
+        // activeChannelMemberships loader
+        this.activeChannelMemberships = this.channelMemberships.stream().filter(channelMembership -> channelMembership.getStatus() != ChannelMembershipStatus.BANNED).collect(Collectors.toSet());
 
         // activeChatRooms loader
         this.activeChatRooms = new HashSet<>(acceptedChatRooms);
