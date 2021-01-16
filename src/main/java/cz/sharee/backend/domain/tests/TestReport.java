@@ -19,9 +19,6 @@ public class TestReport {
     @CreationTimestamp
     private LocalDate issuedAt;
 
-    @Column(nullable = false)
-    private Boolean value;
-
     // comment why the test report is negative
     private String comment;
 

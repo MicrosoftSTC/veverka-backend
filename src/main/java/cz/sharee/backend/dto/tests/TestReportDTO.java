@@ -13,7 +13,6 @@ import java.util.Set;
 public class TestReportDTO {
     private Long id;
     private LocalDate issuedAt;
-    private Boolean value;
     private String comment;
     private Set<TestReportCause> testReportCauses;
     private UserDTO reporter;
