@@ -7,12 +7,14 @@ import cz.sharee.backend.dto.profile.UserDTO;
 import lombok.Getter;
 import lombok.Setter;
 
+import javax.persistence.Column;
 import java.util.Set;
 
 @Getter
 @Setter
 public class TestDTO {
     private Long id;
+    private String name;
     private BadgeDTO badge;
     private Integer points;
     private Set<QuestionDTO> questions;

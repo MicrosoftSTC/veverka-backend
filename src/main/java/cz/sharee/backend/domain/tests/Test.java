@@ -16,6 +16,9 @@ public class Test {
     @GeneratedValue
     private Long id;
 
+    @Column(nullable = false)
+    private String name;
+
     @OneToOne
     private Badge badge;
 
