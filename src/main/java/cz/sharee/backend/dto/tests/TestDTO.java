@@ -14,6 +14,7 @@ import java.util.Set;
 public class TestDTO {
     private Long id;
     private BadgeDTO badge;
+    private Integer points;
     private Set<QuestionDTO> questions;
     private UserDTO creator;
     private Set<TestReportDTO> testReports;

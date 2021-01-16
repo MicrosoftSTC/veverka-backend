@@ -29,6 +29,9 @@ public class Test {
     private Set<TestReport> testReports;
 
     @Column(nullable = false)
+    private Integer points;
+
+    @Column(nullable = false)
     @Enumerated(EnumType.STRING)
     private Subjects subject;
 

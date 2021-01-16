@@ -16,7 +16,7 @@ public class SocialSite {
     private String name;
 
     @Column(nullable = false, length = 40)
-    private String uri;
+    private String url;
 
     @OneToMany(mappedBy = "socialSite")
     private Set<SocialSiteMembership> socialSiteMembership;
