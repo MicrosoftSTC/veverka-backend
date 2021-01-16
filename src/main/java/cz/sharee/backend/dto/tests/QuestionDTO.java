@@ -10,6 +10,6 @@ import java.util.Set;
 public class QuestionDTO {
     private Long id;
     private TestDTO test;
-    private String actualQuestion;
+    private String content;
     private Set<OptionDTO> options;
 }

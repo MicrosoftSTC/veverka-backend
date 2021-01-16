@@ -8,6 +8,6 @@ import lombok.Setter;
 public class OptionDTO {
     private Long id;
     private Boolean isCorrect;
-    private String value;
+    private String content;
     private QuestionDTO question;
 }
